@@ -2,6 +2,7 @@ package org.spring.springboot.dubbo;
 
 import com.alibaba.dubbo.config.annotation.Service;
 
+
 /**
  * Dubbo 服务层实现层
  * <p>
@@ -13,7 +14,10 @@ public class DubboServiceImpl implements DubboService {
 
     int i = 0;
 
+    @Override
     public String serverByRequest(String request) {
+        System.out.println("serverByRequest new="+request);
+
         return "client request：" + request + " 服务端被 调用的次数：" + i++;
     }
 }

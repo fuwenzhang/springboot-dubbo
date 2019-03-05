@@ -1,4 +1,4 @@
-package org.spring.springboot.dubbo;
+package com.springboot.dubbo;
 
 /**
  * Dubbo 服务层
